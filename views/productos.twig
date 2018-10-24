@@ -1,0 +1,93 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+ <div class="row aling-items-center" >
+ {%for producto in productos%}
+  <div class="col-md-3 ml-auto">
+    <a href="/productos/{{producto}}" class="thumbnail">
+        <img src="images/frutossecos/{{producto}}.jpg" alt="..." class="img-thumbnail">
+    </a>
+  </div>
+  {% endfor %}
+  {# <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/avellanas.jpg" alt="..." class="img-thumbnail">
+  </a>
+  
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/anacardos.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/cacahuetes.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div>
+</div>
+ <div class="row aling-items-center">
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+    <img src="images/frutossecos/macadamia.jpg" alt="..." class="img-thumbnail">
+    </a>
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/pistacho.jpg" alt="..." class="img-thumbnail">
+  </div>
+  <div class="col-md-3">
+  <img src="images/frutossecos/datiles.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/almendra.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div>
+</div>
+  <div class="row aling-items-center">
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+    <img src="images/frutossecos/macadamia.jpg" alt="..." class="img-thumbnail">
+    </a>
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/pistacho.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/datiles.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/almendra.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div>
+</div>
+ <div class="row aling-items-center" >
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+    <img src="images/frutossecos/macadamia.jpg" alt="..." class="img-thumbnail">
+    </a>
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/pistacho.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/datiles.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div>
+  <div class="col-md-3">
+  <a href="#" class="thumbnail">
+  <img src="images/frutossecos/almendra.jpg" alt="..." class="img-thumbnail">
+  </a>
+  </div> #}
+</div>
+    {% endblock %}

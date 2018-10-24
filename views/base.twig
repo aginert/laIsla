@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!--Etiquetas Metas, no se ven en el navegador son necesarias por que dan caracteristicas básicas-->
+        <meta charset="UTF-8">
+        <!--Meta, caracteres que se van a utilizar.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Escala en los moviles-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Permite asegurar que se utiliza la ultima version del motor de visualización.-->
+        <meta name="description" content="nuts,almonds,peanuts ">
+        <meta name="author" content="Ana Giner">
+
+        <!-- Se trata del icono que sale en la pestaña del navegador.-->
+        <link rel="icon" href="/images/general/logo.ico">
+
+        <title>La Isla:
+            {{ title }}</title>
+
+        <!--Bootstrap css-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        
+        <!--Cuando añadía navbar no me cargaba el css de Bootstrap, ponía que esto era necestario pero no se que es. -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!--My css-->
+        <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+        <!--Mi js-->
+
+    </head>
+
+    <body>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="/images/general/3.jpg" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Incio
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/productos">
+                            Productos
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
+                            Contacto
+                        
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Menu item 1</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Menu item 2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn ml-2 btn-warning" href="https://www.google.es/maps/place/Mercado+Municipal+De+La+Laguna/@28.4929429,-16.3155813,726m/data=!3m1!1e3!4m5!3m4!1s0xc41cdc7b34d3fd5:0x347aad5d4ade59cd!8m2!3d28.4929429!4d-16.3133926">Llévame</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content">
+            {% block body %}{% endblock %}
+        </div>
+
+        <div id="footer">
+            {% block footer %}
+                &copy; Copyright 2018 by Ana Giner.
+                <a href="http://domain.invalid/">you</a>.
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>

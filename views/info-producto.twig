@@ -1,0 +1,41 @@
+{% extends 'base.twig' %}
+{% block body %}
+    <div class="row">
+        <div class="col-lg-4 ml-auto">
+            <div class="card" style="width: 22rem;">
+                <img class="card-img-top" src="/images/frutossecos/{{producto.name}}.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">{{producto.name|capitalize}}</h2>
+                    <p class="card-text">
+                        <strong>Precio:</strong><br>{{producto.precio}}
+                    </p>
+                    <p class="card-text">
+                        <strong>
+                            Origen:</strong><br>{{producto.origen|capitalize}}
+                    </p>
+                    <p class="card-text">
+                        <strong>
+                            Grasas:</strong><br>{{producto.grasas|capitalize}}
+                    </p>
+                    <p class="card-text">
+                        <strong>
+                            Proteinas:</strong><br>{{producto.proteinas|capitalize}}
+                    </p>
+                    <p class="card-text">
+                        <strong>
+                            Hidratos:</strong><br>{{producto.hidratos|capitalize}}
+                    </p>
+                    <p class="card-text">
+                        <strong>Beneficios:</strong><br>{{producto.beneficio|capitalize}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8" style="width: 22rem;">
+            <p class="card-text">
+                <h1><strong>Descripción:</strong></h1><br> {{producto.description}}
+            </p>
+        </div>
+    </div>
+{% endblock %}
