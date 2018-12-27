@@ -15,4 +15,4 @@ Se añade un carrousel, que no funciona, con lo que descubro la diferencia entre
 .
 ![alt text](https://github.com/aginert/laIsla/blob/master/laIsla/bloggif_5c254bfeacf19.gif "webPageExpress")
 
-## Descubro que hay archivos que no se deben subir al repositorio de git. 
+## Descubro que hay archivos que no se deben subir al repositorio de git. Y como eliminarlos si los has subido. 
