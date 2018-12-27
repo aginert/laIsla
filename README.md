@@ -11,6 +11,8 @@ Trabajo con lo más sencillo de express y me familiarizon con su estructura, me 
 ## Se explora un poco mas el diseño de boostrap, con un cambio de apariencia.
 
 Se añade un carrousel, que no funciona, con lo que descubro la diferencia entre boostrap 3 y 4, y que dependiendo de la versión los cdn también cambian.
+
+.
 ![alt text](https://github.com/aginert/laIsla/blob/master/laIsla/bloggif_5c254bfeacf19.gif "webPageExpress")
 
 ## Descubro que hay archivos que no se deben subir al repositorio de git. 
